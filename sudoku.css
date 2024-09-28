@@ -1,0 +1,201 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition-duration: .4s;
+    text-align: center;
+
+}
+#newGame {
+    font-size: 19px;
+    cursor: pointer;
+    color: rgb(74, 144, 226);
+
+
+}
+p {
+
+    text-align: left;
+    width: 40%;
+    margin: auto;
+
+}
+div {
+    text-align: center;
+}
+h1 {
+    padding-top: 20px;
+text-align: center;
+
+}
+button {
+    display: block;
+margin: auto;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+table {
+    margin: auto;
+
+    border-collapse: collapse;
+
+}
+
+
+td {
+
+    border: 1px solid grey;
+
+
+    text-align: center;
+    vertical-align: center;
+
+}
+
+
+
+#timer {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+input {
+    /*background-color: rgb(147, 209, 229);*/
+    cursor: pointer;
+border: 0;
+    outline: none;
+    font-weight: 160;
+    font-size: 29px;
+    width: 48px;
+    height: 48px;
+
+
+    color:black;
+    text-align: center;
+
+}
+
+#youWin {
+    font-size: 30px;
+    font-weight: 160;
+
+}
+
+#cell0, #cell1, #cell2 {
+    border-top:1px solid black;
+}
+
+#cell2, #cell11, #cell20 {
+    border-right:1px solid black;
+
+}
+
+#cell18, #cell19,#cell20 {
+    /*color:rgb(129, 207, 233);*/
+    border-bottom:1px solid black;
+
+}
+
+#cell0, #cell9, #cell18 {
+    border-left:1px solid black;
+
+}
+
+#cell3, #cell4, #cell5 {
+    border-top:1px solid black;
+}
+
+#cell5, #cell14, #cell23 {
+    border-right:1px solid black;
+
+}
+
+#cell21, #cell22,#cell23 {
+    border-bottom:1px solid black;
+
+}
+
+#cell6, #cell7, #cell8 {
+    border-top:1px solid black;
+}
+
+#cell8, #cell17, #cell26 {
+    border-right:1px solid black;
+
+}
+
+#cell24, #cell25,#cell26 {
+    border-bottom:1px solid black;
+
+}
+
+
+
+#cell29, #cell38, #cell47 {
+    border-right:1px solid black;
+
+}
+
+#cell45, #cell46,#cell47 {
+    border-bottom:1px solid black;
+
+}
+
+
+
+#cell32, #cell41, #cell50 {
+    border-right:1px solid black;
+
+}
+
+#cell48, #cell49,#cell50 {
+    border-bottom:1px solid black;
+
+}
+
+#cell35, #cell44, #cell53 {
+    border-right:1px solid black;
+
+}
+
+#cell51, #cell52,#cell53{
+    border-bottom:1px solid black;
+
+}
+
+#cell62, #cell71, #cell80 {
+    border-right:1px solid black;
+
+}
+
+#cell78, #cell79,#cell80 {
+    border-bottom:1px solid black;
+
+}
+
+#cell69, #cell78, #cell60 {
+    border-left:1px solid black;
+}
+
+#cell75, #cell76,#cell77 {
+    border-bottom:1px solid black;
+
+}
+
+#cell75, #cell66, #cell57 {
+    border-left:1px solid black;
+}
+
+#cell72, #cell73, #cell74{
+    border-bottom:1px solid black;
+}
+
+#cell72, #cell63, #cell54 {
+    border-left:1px solid black;
+}
+
+#cell27, #cell36, #cell45 {
+    border-left:1px solid black;
+}

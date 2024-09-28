@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+
+    <link rel="stylesheet" href="hangman.css" />
+    <link rel="stylesheet" href="all.css" />
+
+  </head>
+  <body>
+    <div id="directions" >
+      <div id="dir-header">
+        <h1 id="dir-h1">Directions:</h1>
+      </div>
+
+        <div id="dir-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+          <p id="rdv">Welcome to the Guessing game!</p>
+          <p id="rdv">A random country or capital will be generated when you start the game.
+            <br><p id="rdv"> Your goal is to guess it by trying out letters that would be in its name. Use as few tries as possible, and win the game! </p>
+ <p id="rdv"> Change the cateogry, difficulty, and hint  by pressing on each option. </p>
+        </div>
+        <div id="dir-button">
+          <button type="button" id="coolReddy" onclick="awesome()">Cool, I'm ready to Play!</button>
+        </div>
+    </div>
+    <div id="content" style="letter-spacing: 2px;">
+   <h1>Guessing Game</h1>
+
+   <h2>Category: <div id ="category" style = "display: inline;letter-spacing: 2px; cursor: pointer;" onclick="changeCategory()">Countries</div> </h2>
+
+   <h2>Difficulty: <div id ="difficulty" style = "display: inline;letter-spacing: 2px; cursor: pointer;" onclick="changeDifficulty()">Easy</div> </h2>
+
+   <h2>Hints: <div id ="hints" style = "display: inline;letter-spacing: 2px; cursor: pointer;" onclick="changeHints()">On</div> </h2>
+
+   <button id="startgame" onclick="startGame()">Start Game</button
+    ><br /><br />
+ 
+
+  <button onclick="checkCharacter('a')" class="letterButton" id="a">A</button>
+  <button onclick="checkCharacter('b')" class="letterButton" id="b">B</button>
+  <button onclick="checkCharacter('c')" class="letterButton" id="c">C</button>
+  <button onclick="checkCharacter('d')" class="letterButton" id="d">D</button>
+  <button onclick="checkCharacter('e')" class="letterButton" id="e">E</button>
+  <button onclick="checkCharacter('f')" class="letterButton" id="f">F</button>
+  <button onclick="checkCharacter('g')" class="letterButton" id="g">G</button>
+  <button onclick="checkCharacter('h')" class="letterButton" id="h">H</button>
+  <button onclick="checkCharacter('i')" class="letterButton" id="i">I</button>
+  <button onclick="checkCharacter('j')" class="letterButton" id="j">J</button>
+  <button onclick="checkCharacter('k')" class="letterButton" id="k">K</button>
+  <button onclick="checkCharacter('l')" class="letterButton" id="l">L</button>
+  <button onclick="checkCharacter('m')" class="letterButton" id="m">M</button><br>
+  <button onclick="checkCharacter('n')" class="letterButton" id="n">N</button>
+  <button onclick="checkCharacter('o')" class="letterButton" id="o">O</button>
+  <button onclick="checkCharacter('p')" class="letterButton" id="p">P</button>
+  <button onclick="checkCharacter('q')" class="letterButton" id="q">Q</button>
+  <button onclick="checkCharacter('r')" class="letterButton" id="r">R</button>
+  <button onclick="checkCharacter('s')" class="letterButton" id="s">S</button>
+  <button onclick="checkCharacter('t')" class="letterButton" id="t">T</button>
+  <button onclick="checkCharacter('u')" class="letterButton" id="u">U</button>
+  <button onclick="checkCharacter('v')" class="letterButton" id="v">V</button>
+  <button onclick="checkCharacter('w')" class="letterButton" id="w">W</button>
+  <button onclick="checkCharacter('x')" class="letterButton" id="x">X</button>
+  <button onclick="checkCharacter('y')" class="letterButton" id="y">Y</button>
+  <button onclick="checkCharacter('z')" class="letterButton" id="z">Z</button><br>
+
+
+  
+
+  <p style="display: inline; font-weight: bold;"> <div style="display: inline; letter-spacing: 2px;" id="lives"></div></p></div>
+ </body>
+  <script src="hangman.js"></script>
+  <script src="all.js"></script>
+
+</html>

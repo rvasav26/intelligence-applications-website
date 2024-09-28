@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css" />
+    <link rel="stylesheet" href="all.css" />
+
+  </head>
+  <body onload="newGame()">
+    <h1>Sudoku</h1><br>
+    <div id="newGame" style="overflow: hidden;" onclick="newGame()">New Game</div><br>
+    
+    <div id="timer">00:00</div>
+    <br>
+    <table>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('0')" oninput= "checkNumber('0')" id="cell0" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('1')" oninput= "checkNumber('1')" id="cell1" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('2')" oninput= "checkNumber('2')" id="cell2" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('3')" oninput= "checkNumber('3')" id="cell3" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('4')" oninput= "checkNumber('4')" id="cell4" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('5')" oninput= "checkNumber('5')" id="cell5" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('6')" oninput= "checkNumber('6')" id="cell6" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('7')" oninput= "checkNumber('7')" id="cell7" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('8')" oninput= "checkNumber('8')" id="cell8" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('9')" oninput= "checkNumber('9')" id="cell9" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('10')" oninput= "checkNumber('10')" id="cell10" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('11')" oninput= "checkNumber('11')" id="cell11" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('12')" oninput= "checkNumber('12')" id="cell12" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('13')" oninput= "checkNumber('13')" id="cell13" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('14')" oninput= "checkNumber('14')" id="cell14" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('15')" oninput= "checkNumber('15')" id="cell15" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('16')" oninput= "checkNumber('16')" id="cell16" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('17')" oninput= "checkNumber('17')" id="cell17" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('18')" oninput= "checkNumber('18')" id="cell18" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('19')" oninput= "checkNumber('19')" id="cell19" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('20')" oninput= "checkNumber('20')" id="cell20" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('21')" oninput= "checkNumber('21')" id="cell21" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('22')" oninput= "checkNumber('22')" id="cell22" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('23')" oninput= "checkNumber('23')" id="cell23" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('24')" oninput= "checkNumber('24')" id="cell24" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('25')" oninput= "checkNumber('25')" id="cell25" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('26')" oninput= "checkNumber('26')" id="cell26" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('27')" oninput= "checkNumber('27')" id="cell27" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('28')" oninput= "checkNumber('28')" id="cell28" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('29')" oninput= "checkNumber('29')" id="cell29" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('30')" oninput= "checkNumber('30')" id="cell30" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('31')" oninput= "checkNumber('31')" id="cell31" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('32')" oninput= "checkNumber('32')" id="cell32" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('33')" oninput= "checkNumber('33')" id="cell33" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('34')" oninput= "checkNumber('34')" id="cell34" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('35')" oninput= "checkNumber('35')" id="cell35" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('36')" oninput= "checkNumber('36')" id="cell36" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('37')" oninput= "checkNumber('37')" id="cell37" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('38')" oninput= "checkNumber('38')" id="cell38" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('39')" oninput= "checkNumber('39')" id="cell39" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('40')" oninput= "checkNumber('40')" id="cell40" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('41')" oninput= "checkNumber('41')" id="cell41" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('42')" oninput= "checkNumber('42')" id="cell42" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('43')" oninput= "checkNumber('43')" id="cell43" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('44')" oninput= "checkNumber('44')" id="cell44" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('45')" oninput= "checkNumber('45')" id="cell45" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('46')" oninput= "checkNumber('46')" id="cell46" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('47')" oninput= "checkNumber('47')" id="cell47" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('48')" oninput= "checkNumber('48')" id="cell48" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('49')" oninput= "checkNumber('49')" id="cell49" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('50')" oninput= "checkNumber('50')" id="cell50" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('51')" oninput= "checkNumber('51')" id="cell51" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('52')" oninput= "checkNumber('52')" id="cell52" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('53')" oninput= "checkNumber('53')" id="cell53" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('54')" oninput= "checkNumber('54')" id="cell54" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('55')" oninput= "checkNumber('55')" id="cell55" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('56')" oninput= "checkNumber('56')" id="cell56" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('57')" oninput= "checkNumber('57')" id="cell57" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('58')" oninput= "checkNumber('58')" id="cell58" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('59')" oninput= "checkNumber('59')" id="cell59" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('60')" oninput= "checkNumber('60')" id="cell60" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('61')" oninput= "checkNumber('61')" id="cell61" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('62')" oninput= "checkNumber('62')" id="cell62" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('63')" oninput= "checkNumber('63')" id="cell63" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('64')" oninput= "checkNumber('64')" id="cell64" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('65')" oninput= "checkNumber('65')" id="cell65" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('66')" oninput= "checkNumber('66')" id="cell66" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('67')" oninput= "checkNumber('67')" id="cell67" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('68')" oninput= "checkNumber('68')" id="cell68" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('69')" oninput= "checkNumber('69')" id="cell69" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('70')" oninput= "checkNumber('70')" id="cell70" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('71')" oninput= "checkNumber('71')" id="cell71" /></td>
+      </tr>
+      <tr>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('72')" oninput= "checkNumber('72')" id="cell72" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('73')" oninput= "checkNumber('73')" id="cell73" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('74')" oninput= "checkNumber('74')" id="cell74" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('75')" oninput= "checkNumber('75')" id="cell75" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('76')" oninput= "checkNumber('76')" id="cell76" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('77')" oninput= "checkNumber('77')" id="cell77" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('78')" oninput= "checkNumber('78')" id="cell78" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('79')" oninput= "checkNumber('79')" id="cell79" /></td>
+        <td><input type="text" onkeypress=" return onlyNumbers(event)" maxlength="1"  onfocus= "resetBackground()"  onchange= "checkNumber('80')" oninput= "checkNumber('80')" id="cell80" /></td>
+      </tr>
+    </table>
+    <div id="winPlace"> </div><br><br><br>
+    <h2>How to play Sudoku</h3><br>
+    <p>Sudoku is a game played on a 9x9 grid of squares. The goal of the game is to fill in all 81 squares as fast as possible. Each row, column, and 3x3 square (outlined in bold) must contain the numbers 1-9 without any repeats.
+
+    </p>
+  </body>
+  <script src="sudoku.js"></script>
+  <script src="all.js"></script>
+
+</html>
