@@ -1,0 +1,26 @@
+#footer {
+    padding-top:100px;
+    padding-bottom:10px;
+
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+font-size: 13px;
+    color: grey;
+    text-align: center;
+
+}
+
+#goHomeImg {
+    position: fixed;
+padding: 10px;
+    
+    height: 60px;
+    width: 60px;
+    top: 0px;
+    left:  0px;
+    
+    cursor: pointer;
+
+}

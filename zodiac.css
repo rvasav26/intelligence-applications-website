@@ -1,0 +1,49 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 241, 215);
+}
+#content {
+  text-align: center;
+  font-size: 30px;
+  max-width: 500px;
+
+  margin: auto;
+  padding: 10px;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(245, 210, 164),
+    rgb(255, 186, 95)
+  );
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+  position: relative;
+}
+
+#zodiacInputMonth {
+  font-size: 20px;
+  height: 30px;
+  width: 150px;
+}
+
+#zodiacInputDay {
+    font-size: 20px;
+    height:30px;
+    width: 150px;
+}
+
+#zodiacDiv {
+    font-weight: bold;
+    font-size: 40px;
+}

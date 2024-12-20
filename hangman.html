@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-MGV42TMLC4");
-    </script>
-    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hangman Game</title>
@@ -25,21 +10,7 @@
 
   </head>
   <body>
-    <div id="directions" >
-      <div id="dir-header">
-        <h1 id="dir-h1">Directions:</h1>
-      </div>
-
-        <div id="dir-text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-          <p id="rdv">Welcome to the Guessing game!</p>
-          <p id="rdv">A random country or capital will be generated when you start the game.
-            <br><p id="rdv"> Your goal is to guess it by trying out letters that would be in its name. Use as few tries as possible, and win the game! </p>
- <p id="rdv"> Change the cateogry, difficulty, and hint  by pressing on each option. </p>
-        </div>
-        <div id="dir-button">
-          <button type="button" id="coolReddy" onclick="awesome()">Cool, I'm ready to Play!</button>
-        </div>
-    </div>
+    
     <div id="content" style="letter-spacing: 2px;">
    <h1>Guessing Game</h1>
 
@@ -78,7 +49,7 @@
   <button onclick="checkCharacter('w')" class="letterButton" id="w">W</button>
   <button onclick="checkCharacter('x')" class="letterButton" id="x">X</button>
   <button onclick="checkCharacter('y')" class="letterButton" id="y">Y</button>
-  <button onclick="checkCharacter('z')" class="letterButton" id="z">Z</button><br>
+  <button onclick="checkCharacter('z')" class="letterButton" id="z">Z</button><br><br><br>
 
 
   

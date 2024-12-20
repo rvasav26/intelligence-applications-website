@@ -4,7 +4,6 @@
 
 #content {
     font-size: 25px;
-
 }
 
 #startgame, .normalButton {
@@ -16,11 +15,6 @@
     height: 30px;
     cursor: pointer;
 }
-#startgame, .normalButton {
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
-}
 #inGame {
     color:grey;
 }
@@ -30,10 +24,9 @@
     border-radius: 3px;
     border: none;
     cursor: pointer;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     margin: 3px;
-    font-size: 20px;
 }
 
 div {
@@ -59,11 +52,9 @@ div {
     border-radius: 3px;
     border: none;
 
-    height: 60px;
-    width: 60px;
-    font-size: 20px;
+    height: 40px;
+    width: 40px;
     margin: 3px;
-
 }
 
 .disabledButton {
@@ -79,60 +70,5 @@ transition-duration: .4s;
 
 #disabledStartButton {
     transition-duration: .4s;
-    width: 200px;
-    height: 50px;
-    font-size: 25px;
 }
 
-
-
-#directions {
-    background-color: rgba(173, 173, 173, 0.92);
-padding: 5px;
-    position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-
-    width: 1000px;
-    height: 750px;
-
-
-    z-index: 1;
-
-
-}
-
-#dir-h1 {
-    letter-spacing: normal;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50px;
-}
-
-#dir-text {
-    font-family: cursive;
-
-    font-size: 35px;
-    letter-spacing: normal;
-
-    margin: auto;
-}
-
-#coolReddy {
-    cursor: pointer;
-    padding-top: 7px;
-    font-family: fantasy;
-    font-size: 25px;
-    width: 300px;
-    height: 50px;
-}
-
-#rdv {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-#letterPlace {
-    font-size: 50px;
-}

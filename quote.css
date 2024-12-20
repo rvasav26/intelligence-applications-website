@@ -1,0 +1,76 @@
+* {
+    text-align: center;
+    font-family:cursive;
+
+}
+
+/*make letter of name shine yellow one by one on hover
+*/
+body{
+
+
+  background-color: rgb(253, 200, 136);
+
+}
+.quote-click {
+
+  background-color: brown;
+  color: gold;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 40px;
+border: none;
+  outline: none;
+}
+#slideshowButton {
+  background-color: brown;
+  color: gold;
+  cursor: pointer;
+  font-size: 20px;
+
+
+border: none;
+  outline: none;
+}
+.quote-click:hover, #slideshowButton:hover {
+
+  background-color: rgb(192, 51, 51);
+}
+
+#quotePlace {
+    text-align: center;
+    font-size: 30px;
+}
+#quotePlace2 {
+  transition-duration: .4s;
+
+}
+#quotePlace2:hover{
+  cursor: pointer;
+
+  color:rgb(139, 125, 45);
+
+}
+#image {
+  
+  /*transition: box-shadow 1s;*/
+}
+#image:hover {
+  /*/box-shadow: 1px 5px 20px grey;*/
+}
+#fontImg {
+  
+   
+  
+  position: fixed;
+padding: 10px;
+  
+  height: 57px;
+  width: 60px;
+  top: 5px;
+  right:  0;
+  
+  cursor: pointer;
+
+}
+

@@ -23,9 +23,6 @@ var randomWordArray;
 var hintCharacters = [];
 
 
-function awesome(){
-    document.getElementById("directions").style.display = "none"
-}
 function changeHints() {
     if (inGame === true) {
 
@@ -126,7 +123,6 @@ function startGame() {
         document.getElementById("content").appendChild(wordContainer)
         for (var y = 0; y < randomWordArray.length; y++) {
             var letterPlace = document.createElement("div");
-            letterPlace.id = "letterPlace"
             if (randomWordArray[y] === " ") {
 
                 letterPlace.innerHTML = " "
@@ -237,7 +233,7 @@ function gameOver() {
         buttons[a].disabled = "true";
     }
 
-    document.getElementById("wordContainer").innerHTML = "Game Over!<br>The correct answer was: " + randomWord + "<br>Time taken: " + endTime + " seconds";
+    document.getElementById("wordContainer").innerHTML = "Game Over!<br>The correct answer was: " + randomWord + "<br>Time taken: " + endTime + " seconds<br><br>";
     if (color1 === "red") {
         document.getElementById("wordContainer").style.color = color1;
         document.getElementById("wordContainer").style.fontWeight = "bold";
@@ -251,8 +247,6 @@ function gameOver() {
 
         color1 = "red";
     }
-    document.getElementById("hintButton").style.display = "none"
-
 }
 
 function youWin() {
@@ -269,7 +263,7 @@ function youWin() {
         buttons[a].disabled = "true";
     }
 
-    document.getElementById("wordContainer").innerHTML = "You Win!<br>Time taken: " + endTime + " seconds";
+    document.getElementById("wordContainer").innerHTML = "You Win!<br>Time taken: " + endTime + " seconds<br><br>";
     if (color2 === "green") {
         document.getElementById("wordContainer").style.color = color2;
         document.getElementById("wordContainer").style.fontWeight = "bold";
@@ -282,8 +276,6 @@ function youWin() {
 
         color2 = "green";
     }
-    document.getElementById("hintButton").style.display = "none"
-
 }
 
 function playAgain() {

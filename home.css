@@ -1,8 +1,7 @@
-
-
-
 body {
-  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
 
   background-image: url(https://webartdevelopers.com/blog/wp-content/uploads/2018/12/frosty-spirals-600x333.png);
   background-repeat:x;
@@ -10,8 +9,6 @@ body {
   font-size: 20px;
   background-attachment: fixed;
   background-repeat: none;
-  margin:0;
-
 }
 
 
@@ -27,11 +24,6 @@ table {
 td {
   box-shadow: 2px 2px 4px rgb(201, 201, 201);
   background-color:rgba(238, 217, 181, 0.8);
-
-
-;
-
-  
   outline: none;
   border: none;
   text-align: center;
@@ -45,12 +37,6 @@ td {
 td {
   cursor: pointer;
   border: 1px solid rgb(255, 234, 176);
-  
-
-
-
-
-
   font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text",
     "Times New Roman";
   font-weight: 520;
@@ -88,17 +74,10 @@ img {
 
 }
 
-.topbar { 
-
+.topbar {  
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
     background-color:rgb(135, 206, 250, 0.9);
-    /*background-color:lightblue;*/
-
-    height: 65px;
-
-    top:0;
-
 }
 
 .dropdown-themes {
@@ -107,67 +86,36 @@ display: none;
     max-width: 100px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     position: absolute;
-
-    font-size: 19px;
+    font-family: 'Lato';
+    font-size: 18px;
     z-index: 1;
 }
 .test {
   position: absolute;
 }
 .themebutton {
-
     cursor:pointer;
-    font-size:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:15px;
+    font-family: inherit;
     border:none;
-    background-color:rgb(135, 206, 250, 0.9);
+    background-color:rgb(135, 206, 250, 0.5);
     width: 100%;
 }
-.themebutton:nth-child(3n+1) {
-  color:#191970;
 
-}
-.themebutton:nth-child(3n+2) {
-  color:#0055d3;
-  color:#191970;
-
-}
-.aboutbutton {
-float: left;
-
-}
 .dropdown {
-  float:left;
+    float: left;
 }
 
-#webText{
-
-
-  font-weight: bold;
-  padding-top: 13px;
-  font-size: 30px;
-
-}
-
-.vasavadatta, .aboutbutton, .funbutton, .gamebutton, .testbutton {
-
+.aboutbutton, .funbutton, .gamebutton, .testbutton {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: none;
     outline: none;
     color: white;
     padding: 14px 16px;
-    padding-top: 15px;
     background-color:inherit;
-    font-size: 27px;
-    font-size: 30px;
-
+    font-size: 21px;
     margin: 0;
     cursor: pointer;
-
-
-}
-.vasavadatta {
-  font-weight: bold;
 
 }
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riddle Generator</title>
+    <link rel="stylesheet" href="riddle.css" />
+    <link rel="stylesheet" href="all.css" />
+
+  </head>
+  <body onload="generateRiddle()">
+    <div id="img"></div>
+    <p type="button" onclick="generateRiddle()" class="riddle-click">
+      Generate Riddle
+    </p>
+
+
+    <div id="riddlePlace"></div><br><br><br>
+    <button id="answerButton" onclick="viewAnswer()">View Answer</button><br><br><br>
+    
+
+    <div id="answerPlace"></div>
+    
+
+  </body>
+
+  <script src="riddle.js"></script>
+  <script src="all.js"></script>
+
+</html>

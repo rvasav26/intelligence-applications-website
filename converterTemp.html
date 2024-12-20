@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <script src="converter.js"></script>
+    <link rel="stylesheet" href="converter.css">
+    <link rel="stylesheet" href="all.css">
+
+</head>
+<body>
+    <div id="content">
+    <div id="typeOfConversion" title="Click to change" onclick="changeConversion();">Temperature</div>
+    <input type="text" oninput="calculateConversion();" onchange = "calculateConversion();" id="leftText" onkeypress=" return onlyNumbers(event)"><div id="equals" >=</div>
+    <input type="text" id="rightText" onkeypress=" return onlyNumbers(event)"><br>
+
+    <select id="left" onchange="calculateConversion();">
+        <option>Fahrenheit (F)</option>
+        <option>Celsius (C)</option>
+        <option>Kelvin (K)</option>
+
+    </select>
+    
+    <select id="right" onchange="calculateConversion();">
+        <option>Fahrenheit (F)</option>
+        <option>Celsius (C)</option>
+        <option>Kelvin (K)</option>
+
+    </select>
+</div>
+<script src="all.js"></script>
+</body>
+</html>
