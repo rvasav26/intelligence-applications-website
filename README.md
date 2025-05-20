@@ -1,5 +1,3 @@
-<img width="700" alt="Screenshot 2024-09-27 at 10 19 46 PM" src="https://github.com/user-attachments/assets/187dc51e-5d05-4f25-a995-cd250a32fca8">
-
 # Intelligence Applications Website
 Custom website made with HTML, CSS, and JavaScript languages. Created 11 custom modules, including intelligence quizzes, games, and entertainment activites. Developed complex AI and computer players for modules such as Sudoku, Tic-Tac-Toe, and Guessing Game. 
 
