@@ -5,4 +5,5 @@ Hand-made website made from scratch using HTML, CSS, and Javascript programming 
 
 ## Other
 Website Link: https://rvasav26.github.io/intelligence-applications-website/
+
 (Old Link): https://vasavada.website/
