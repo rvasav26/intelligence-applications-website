@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Language</title>
+    <script src="sign.js"></script>
+
+
+    <link rel="stylesheet" href="all.css" />
+    
+  </head>
+
+  <body onload="load()">
+    <div id="p">
+      <button id="practice" onclick="replace('letters')">Practice Alphabet</button>
+      <button id="practice" onclick="replace('sentences')">Practice Sentences</button>
+    </div>
+
+    <div id="imagePlace"></div>
+    <div id="bHold"><button id="wordPlace"></button></div>
+
+    <br />
+    <div id="buttonHolder">
+      <button onclick="load('back')" id="left">&#x2190;</button>
+      <button onclick="load('forwards')" id="right">&#x2192;</button>
+    </div>
+  </body>
+  <style>
+
+    html {
+      background-color: rgb(216, 161, 88);
+    }
+
+    * {
+      font-weight: bold;
+    }
+    a {
+      padding-top: none;
+    }
+    #bHold {
+      text-align: center;
+    }
+    #wordPlace {
+      width: 500px;
+
+      color: rgb(227, 224, 224);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: bold;
+
+      text-align: center;
+    }
+    #imagePlace {
+      text-align: center;
+    }
+    img {
+
+      width: 500px;
+      /*width: 1200px;*/
+      /*height: auto;*/
+    }
+
+    #buttonHolder {
+      text-align: center;
+    }
+    button {
+      outline: none;
+      text-align: center;
+      cursor: pointer;
+      background-color: brown;
+      height: 70px;
+      width: 160px;
+      font-size: 55px;
+      color: white;
+    }
+    button:hover {
+      background-color: rgb(134, 33, 33);
+    }
+    #p {
+      text-align: center;
+    }
+    #practice {
+      margin-top: 20px;
+margin-bottom: 20px;
+      font-size: 28px;
+    }
+  </style>
+<script src="all.js"></script>
+
+
+</html>

@@ -131,7 +131,7 @@ var div = document.createElement("div");
 
 function youWin() {
     window.clearInterval(interval);
-    
+
     div.innerHTML = "You Win!"
     div.id = "youWin";
 
@@ -161,7 +161,7 @@ function onlyNumbers(evt) {
 
 function newGame() {
     div.innerHTML = ""
-resetBackground()
+    resetBackground()
     document.getElementById("timer").innerHTML = "00:00";
     seconds = 0;
     minutes = 0;
@@ -343,7 +343,7 @@ resetBackground()
 
     }
 
-var showArray = array;
+    var showArray = array;
 
 
     for (var a = 0; a < 81; a++) {
@@ -357,7 +357,7 @@ var showArray = array;
 
         var randomNumber = Math.floor(Math.random() * arr.length);
 
-        document.getElementById("cell" + arr[randomNumber]).value  = ""
+        document.getElementById("cell" + arr[randomNumber]).value = ""
 
         document.getElementById("cell" + arr[randomNumber]).disabled = false
 
@@ -367,7 +367,6 @@ var showArray = array;
     }
 
 
-    
 
 
 
@@ -385,4 +384,5 @@ var showArray = array;
 
 
 
-    }
+
+}
