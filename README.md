@@ -4,4 +4,4 @@
 Hand-made website made from scratch using HTML, CSS, and Javascript programming languages. Created 11 custom modules, including intelligence quizzes, games, and entertainment activites. Developed complex AI and computer players for modules such as Sudoku, Tic-Tac-Toe, and Guessing Game. 
 
 ## Other
-Website Link (to be deprecated soon): https://vasavada.website/ 
+Website Link: https://rvasav26.github.io/intelligence-applications-website/
