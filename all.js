@@ -1,6 +1,6 @@
 var goHomeImg = document.createElement("img");
 goHomeImg.id = "goHomeImg"
-goHomeImg.src = "https://image.flaticon.com/icons/svg/25/25694.svg";
+goHomeImg.src = "images/GoHome.png";
 
 
 goHomeImg.title="Go Back to Home Page"

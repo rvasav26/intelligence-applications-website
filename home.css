@@ -99,6 +99,7 @@ display: none;
     font-family: inherit;
     border:none;
     background-color:rgb(135, 206, 250, 0.5);
+    color: rgb(24, 24, 24);
     width: 100%;
 }
 
