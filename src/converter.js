@@ -1,11 +1,11 @@
 function changeConversion() {
 
     if (location.href.split("/").slice(-1) == "converterDistance.html") {
-        window.location.replace("converterTemp.html");
+        window.location.href ="converterTemp.html";
     }
     else if (location.href.split("/").slice(-1) == "converterTemp.html") {
 
-        window.location.replace("converterDistance.html");
+        window.location.href ="converterDistance.html";
     }
 
 }

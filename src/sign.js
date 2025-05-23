@@ -195,13 +195,13 @@ function clean() {
 
 function replace(plaz) {
     if (plaz === "words") {
-        window.location.replace("sign.html")
+        window.location.href ="sign.html"
     }
     else if (plaz === "letters") {
-        window.location.replace("sign2.html")
+        window.location.href ="sign2.html"
     }
     else if (plaz === "sentences") {
-        window.location.replace("sign3.html")
+        window.location.href ="sign3.html"
     }
 
 
