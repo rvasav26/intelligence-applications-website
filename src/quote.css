@@ -43,12 +43,7 @@ body {
 
   color: rgb(139, 125, 45);
 }
-#image {
-  /*transition: box-shadow 1s;*/
-}
-#image:hover {
-  /*/box-shadow: 1px 5px 20px grey;*/
-}
+
 #fontImg {
   position: fixed;
   padding: 10px;
