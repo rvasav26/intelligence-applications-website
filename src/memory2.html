@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Number Memory Test</title>
     <link rel="stylesheet" href="memory2.css" />
     <link rel="stylesheet" href="all.css" />
-
   </head>
   <body>
     <div id="test">
       <div id="test1">
         <h1 id="h1">Number Memory Test</h1>
-        <p id="p">
-          This is a test to see how good your memory is.
-        </p>
+        <p id="p">This is a test to see how good your memory is.</p>
         <p id="start" onclick="start()">Start</p>
 
         <p id="number"></p>
@@ -25,5 +37,4 @@
 
   <script src="memory2.js"></script>
   <script src="all.js"></script>
-
 </html>

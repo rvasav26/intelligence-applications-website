@@ -4,13 +4,12 @@ body {
   text-align: center;
 
   background-image: url(https://webartdevelopers.com/blog/wp-content/uploads/2018/12/frosty-spirals-600x333.png);
-  background-repeat:x;
-  
+  background-repeat: x;
+
   font-size: 20px;
   background-attachment: fixed;
   background-repeat: none;
 }
-
 
 table {
   position: relative;
@@ -23,7 +22,7 @@ table {
 
 td {
   box-shadow: 2px 2px 4px rgb(201, 201, 201);
-  background-color:rgba(238, 217, 181, 0.8);
+  background-color: rgba(238, 217, 181, 0.8);
   outline: none;
   border: none;
   text-align: center;
@@ -43,8 +42,7 @@ td {
   font-size: 27px;
   padding: 5px;
   font-weight: 90;
-    color:#191970;
-
+  color: #191970;
 }
 hr {
   border: 1px solid grey;
@@ -67,72 +65,71 @@ img {
   border: none;
   outline: none;
   font-weight: bold;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 60px;
   color: rgb(24, 24, 24);
-  color:#191970;
-
+  color: #191970;
 }
 
-.topbar {  
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    overflow: hidden;
-    background-color:rgb(135, 206, 250, 0.9);
+.topbar {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  overflow: hidden;
+  background-color: rgb(135, 206, 250, 0.9);
 }
 
 .dropdown-themes {
-display: none;
-    background-color:rgb(135, 206, 250, 0.5);
-    max-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    position: absolute;
-    font-family: 'Lato';
-    font-size: 18px;
-    z-index: 1;
+  display: none;
+  background-color: rgb(135, 206, 250, 0.5);
+  max-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  font-family: "Lato";
+  font-size: 18px;
+  z-index: 1;
 }
 .test {
   position: absolute;
 }
 .themebutton {
-    cursor:pointer;
-    font-size:15px;
-    font-family: inherit;
-    border:none;
-    background-color:rgb(135, 206, 250, 0.5);
-    color: rgb(24, 24, 24);
-    width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  background-color: rgb(135, 206, 250, 0.5);
+  color: rgb(24, 24, 24);
+  width: 100%;
 }
 
 .dropdown {
-    float: left;
+  float: left;
 }
 
-.aboutbutton, .funbutton, .gamebutton, .testbutton {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color:inherit;
-    font-size: 21px;
-    margin: 0;
-    cursor: pointer;
-
+.aboutbutton,
+.funbutton,
+.gamebutton,
+.testbutton {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-size: 21px;
+  margin: 0;
+  cursor: pointer;
 }
 
 .dropdown:hover .dropdown-themes {
-    display: block;
+  display: block;
 }
 
-.aboutbutton:hover, .funbutton:hover, .gamebutton:hover, .testbutton:hover {
-    background-color: rgb(92, 189, 250);
+.aboutbutton:hover,
+.funbutton:hover,
+.gamebutton:hover,
+.testbutton:hover {
+  background-color: rgb(92, 189, 250);
 }
 
 .dropdown-themes .themebutton:hover {
-    background-color: rgb(92, 189, 250, .9);
+  background-color: rgb(92, 189, 250, 0.9);
 }
-
-
-
-
-

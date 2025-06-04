@@ -1,8 +1,12 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   background-color: rgb(245, 210, 164);
-  background-image: linear-gradient(to bottom right, rgb(245, 210, 164), rgb(255, 186, 95));
-
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(245, 210, 164),
+    rgb(255, 186, 95)
+  );
 }
 #content {
   max-width: 500px;
@@ -16,8 +20,7 @@ p {
 }
 
 button {
-    
-    width: 150px;
+  width: 150px;
   border-radius: 5%;
   position: relative;
   left: 175px;
@@ -31,11 +34,11 @@ button {
 }
 
 button:hover {
-    background-color: rgb(211, 211, 211);
+  background-color: rgb(211, 211, 211);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #resultPlace {
@@ -63,4 +66,3 @@ html {
 #elapsedText {
   font-size: 30px;
 }
-

@@ -60,27 +60,28 @@ button {
   font-size: 25px;
 }
 
-
-#question, #option1, #option2, #option3, #option4, #continueOn {
+#question,
+#option1,
+#option2,
+#option3,
+#option4,
+#continueOn {
   font-size: 30px;
   text-align: center;
 }
 
-#option1, #option2, #option3, #option4, #continueOn {
+#option1,
+#option2,
+#option3,
+#option4,
+#continueOn {
   cursor: pointer;
-color: white;
+  color: white;
   text-align: center;
   background-color: royalblue;
-padding: 10px;
+  padding: 10px;
 
-margin: 5px;
-
-
-
-
-  
-  
-
+  margin: 5px;
 }
 #continueContainer {
   display: none;
@@ -88,8 +89,6 @@ margin: 5px;
 #totalContainer {
   display: none;
 }
-
-
 
 #container {
   margin: auto;

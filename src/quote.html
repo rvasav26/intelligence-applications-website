@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote Generator</title>
     <link rel="stylesheet" href="quote.css" />
     <link rel="stylesheet" href="all.css" />
-
   </head>
   <body onload="generateQuote()">
-  <!--<img id="fontImg" src="https://www.freeiconspng.com/thumbs/letter-f-icon-png/black-letter-f-icon-png-8.png" alt="Change Font Button">-->
-
+    <!--<img id="fontImg" src="https://www.freeiconspng.com/thumbs/letter-f-icon-png/black-letter-f-icon-png-8.png" alt="Change Font Button">-->
 
     <button type="button" onclick="generateQuote()" class="quote-click">
-      Generate Quote
-    </button><br><br>
-
+      Generate Quote</button
+    ><br /><br />
 
     <div id="quotePlace"><span id="quotePlace2"></span></div>
     <div id="imagePlace"></div>
-    <br>
-  <!--<button type="button" id="slideshowButton" title="Images will change every ten seconds" onclick="startSlideShowTimer()">Play in Slideshow</button>-->
-
+    <br />
+    <!--<button type="button" id="slideshowButton" title="Images will change every ten seconds" onclick="startSlideShowTimer()">Play in Slideshow</button>-->
   </body>
 
   <script src="quote.js"></script>
   <script src="all.js"></script>
-
 </html>

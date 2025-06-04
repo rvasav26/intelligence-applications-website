@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Converter</title>
     <script src="converter.js"></script>
-    <link rel="stylesheet" href="converter.css">
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="converter.css" />
+    <link rel="stylesheet" href="all.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <div id="content">
-    <div id="typeOfConversion" title="Click to change" onclick="changeConversion();">Temperature</div>
-    <input type="text" oninput="calculateConversion();" onchange = "calculateConversion();" id="leftText" onkeypress=" return onlyNumbers(event)"><div id="equals" >=</div>
-    <input type="text" id="rightText" onkeypress=" return onlyNumbers(event)"><br>
+      <div
+        id="typeOfConversion"
+        title="Click to change"
+        onclick="changeConversion();"
+      >
+        Temperature
+      </div>
+      <input
+        type="text"
+        oninput="calculateConversion();"
+        onchange="calculateConversion();"
+        id="leftText"
+        onkeypress=" return onlyNumbers(event)"
+      />
+      <div id="equals">=</div>
+      <input
+        type="text"
+        id="rightText"
+        onkeypress=" return onlyNumbers(event)"
+      /><br />
 
-    <select id="left" onchange="calculateConversion();">
+      <select id="left" onchange="calculateConversion();">
         <option>Fahrenheit (F)</option>
         <option>Celsius (C)</option>
         <option>Kelvin (K)</option>
+      </select>
 
-    </select>
-    
-    <select id="right" onchange="calculateConversion();">
+      <select id="right" onchange="calculateConversion();">
         <option>Fahrenheit (F)</option>
         <option>Celsius (C)</option>
         <option>Kelvin (K)</option>
-
-    </select>
-</div>
-<script src="all.js"></script>
-</body>
+      </select>
+    </div>
+    <script src="all.js"></script>
+  </body>
 </html>

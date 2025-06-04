@@ -21,21 +21,15 @@
   font-size: 50px;
 }
 
-.themebutton:nth-child(3n+1) {
-  color:#191970;
-  color:#191970;
-
+.themebutton:nth-child(3n + 1) {
+  color: #191970;
+  color: #191970;
 }
-.themebutton:nth-child(3n+2) {
-  color:#0055d3;
-  color:white;
-  color:#191970;
-
-
+.themebutton:nth-child(3n + 2) {
+  color: #0055d3;
+  color: white;
+  color: #191970;
 }
-
-
-
 
 * {
   box-sizing: border-box;

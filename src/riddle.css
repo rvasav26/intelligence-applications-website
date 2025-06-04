@@ -1,10 +1,8 @@
 * {
-    text-align: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-
-
 
 .riddle-click {
   color: rgb(255, 102, 0);
@@ -17,23 +15,23 @@
   color: brown;
 }
 
-#riddlePlace, #answerPlace {
-    text-align: center;
+#riddlePlace,
+#answerPlace {
+  text-align: center;
 
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #answerButton {
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   outline: none;
   background-color: rgb(233, 153, 96);
   border: 1px solid black;
   cursor: pointer;
-width: 100px;
-height: 40px;
+  width: 100px;
+  height: 40px;
 }
 
 #riddleButton:hover {
   background-color: rgb(223, 136, 74);
-
 }

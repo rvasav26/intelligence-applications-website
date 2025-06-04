@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zodiac Sign Quiz</title>
     <script src="zodiac.js"></script>
-    <link rel="stylesheet" href="zodiac.css">
-    <link rel="stylesheet" href="all.css">
-
-
+    <link rel="stylesheet" href="zodiac.css" />
+    <link rel="stylesheet" href="all.css" />
   </head>
   <body>
     <div id="content">
       <h1>Zodiac Sign Quiz</h1>
       <p>Take this quiz to find your Zodiac Sign!</p>
       <div id="container">
-      <button type="button" onclick="createQuiz();">Take Quiz</button></div>
+        <button type="button" onclick="createQuiz();">Take Quiz</button>
+      </div>
     </div>
   </body>
   <script src="all.js"></script>
-  
 </html>

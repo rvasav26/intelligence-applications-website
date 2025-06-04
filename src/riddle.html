@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MGV42TMLC4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-MGV42TMLC4");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riddle Generator</title>
     <link rel="stylesheet" href="riddle.css" />
     <link rel="stylesheet" href="all.css" />
-
   </head>
   <body onload="generateRiddle()">
     <div id="img"></div>
@@ -14,17 +28,14 @@
       Generate Riddle
     </p>
 
-
-    <div id="riddlePlace"></div><br><br><br>
-    <button id="answerButton" onclick="viewAnswer()">View Answer</button><br><br><br>
-    
+    <div id="riddlePlace"></div>
+    <br /><br /><br />
+    <button id="answerButton" onclick="viewAnswer()">View Answer</button
+    ><br /><br /><br />
 
     <div id="answerPlace"></div>
-    
-
   </body>
 
   <script src="riddle.js"></script>
   <script src="all.js"></script>
-
 </html>

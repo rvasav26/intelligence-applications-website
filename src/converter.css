@@ -1,10 +1,12 @@
 body {
-
-  background-image: linear-gradient(to bottom right, rgb(0, 174, 255), rgb(3, 90, 190));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 174, 255),
+    rgb(3, 90, 190)
+  );
   height: 100%;
   background-repeat: no-repeat;
-    background-attachment: fixed;
-
+  background-attachment: fixed;
 }
 
 #content {
@@ -24,10 +26,9 @@ body {
 }
 
 select {
-
   text-shadow: 2px 2px 4px #4d4d4d;
   border: none;
-  outline:none;
+  outline: none;
   color: white;
   background-color: cornflowerblue;
   cursor: pointer;
@@ -44,7 +45,8 @@ option {
 }
 
 * {
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #equals {
@@ -56,11 +58,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   left: 10px;
 }
 
-
 input[type="text"] {
   border: 1px solid;
   border: none;
-  box-shadow: 2px 2px grey ;
+  box-shadow: 2px 2px grey;
   outline: none;
   font-size: 30px;
   padding: 10px;
